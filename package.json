@@ -1,0 +1,46 @@
+{
+  "name": "dash-db",
+  "version": "0.0.1",
+  "description": "Utils for using local storage/db (e.g. sqlite, csv, json-file, js-object-file, yaml-file, etc.)",
+  "main": "index.js",
+  "scripts": {
+    "start:watch": "nodemon --exec babel-node index.js",
+    "build:watch": "babel --watch src/index.js --out-dir dist",
+    "start": "node dist/index.js",
+    "build": "babel src --out-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miko-github/dash-db.git"
+  },
+  "keywords": [
+    "node",
+    "node-js",
+    "javascript",
+    "sqlite",
+    "database",
+    "js",
+    "jsdb",
+    "nodedb",
+    "dash-db",
+    "dash-database",
+    "dash",
+    "database",
+    "dash-js",
+    "dash"
+  ],
+  "author": "miko-github",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miko-github/dash-db/issues"
+  },
+  "homepage": "https://github.com/miko-github/dash-db#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/node": "^7.13.13",
+    "@babel/preset-env": "^7.14.1",
+    "nodemon": "^2.0.7"
+  }
+}
