@@ -1,6 +1,6 @@
 # 📔 Dash-DB
 
-[local|flat-file|single-file] database management system
+[ **local** | **flat-file** | **single-file** | **memory** ] management system
 
 | database-type  | support-node | support-browser |
 | -------------- | ------------ | --------------- |
