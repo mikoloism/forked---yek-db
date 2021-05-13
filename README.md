@@ -1,6 +1,40 @@
-# dash-db 📔
+# 📔 Dash-DB
 
-"Dash-DB" : Local database management system (ORM/ORD) working with CSV, JSON, YAML, JS-Object-File, XML, LocalStorage, Clipboard, SessionStorage, IndexedDB, webSQL, etc.
+Local database management system
+- internal ORM/ORD
+- support
+  - *JDB (stand: javascript database)
+    - browser
+    - node
+  - SQLite3
+    - browser
+    - node
+  - Javascript Object File
+    - node
+  - JSON
+    - browser
+    - node
+  - YAML
+    - node
+  - XML
+    - node
+  - CSV
+    - node
+  - LocalStorage
+    - browser
+    - node
+  - SessionStorage
+    - browser
+    - node
+  - Clipboard
+    - browser
+    - node
+  - IndexedDB
+    - browser
+    - node
+  - webSQL
+    - browser
+    - node
 
 ### create connection
 
