@@ -4,7 +4,6 @@
 
 | database-type  | support-node | support-browser |
 | -------------- | ------------ | --------------- |
-<<<<<<< HEAD
 | JDB            | ✔️           | ✔️              |
 | SQLite3        | ✔️           | ✔️              |
 | JSOF           | ✔️           | ✖️              |
@@ -18,21 +17,6 @@
 | Clipboard      | ✔️           | ✔️              |
 | IndexedDB      | ✔️           | ✔️              |
 | webSQL         | ✔️           | ✔️              |
-=======
-| JDB            | ✅           | ✅              |
-| SQLite3        | ✅           | ✅              |
-| JSOF           | ✅           | ✖️              |
-| JSON           | ✅           | ✅              |
-| YAML           | ✅           | ❎              |
-| XML            | ✅           | ❎              |
-| CSV            | ✅           | ❎              |
-| YAML           | ✅           | ❎              |
-| LocalStorage   | ✅           | ✅              |
-| SessionStorage | ✅           | ✅              |
-| Clipboard      | ✅           | ✅              |
-| IndexedDB      | ✅           | ✅              |
-| webSQL         | ✅           | ✅              |
->>>>>>> 0556eeeeeae23001dc70a1fc569720879a10d296
 
 ### create connection
 
