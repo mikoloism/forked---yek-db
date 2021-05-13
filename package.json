@@ -1,5 +1,5 @@
 {
-	"name": "dash-db",
+	"name": "@dash-js/dash-db",
 	"version": "0.0.3",
 	"description": "Utils for using local storage/db (e.g. sqlite, csv, json-file, js-object-file, yaml-file, etc.)",
 	"main": "index.js",
@@ -35,7 +35,7 @@
 	"bugs": {
 		"url": "https://github.com/miko-github/dash-db/issues"
 	},
-	"homepage": "https://github.com/miko-github/dash-db#readme",
+	"homepage": "https://github.com/dash-js/dash-db#readme",
 	"devDependencies": {
 		"@babel/cli": "^7.13.16",
 		"@babel/core": "^7.14.0",
