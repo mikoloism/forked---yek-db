@@ -1,6 +1,22 @@
-# dash-db 📔
+# 📔 Dash-DB
 
-"Dash-DB" : Local database management system (ORM/ORD) working with CSV, JSON, YAML, JS-Object-File, XML, LocalStorage, Clipboard, SessionStorage, IndexedDB, webSQL, etc.
+[ **local** | **flat-file** | **single-file** | **memory** ] management system
+
+| database-type  | support-node | support-browser |
+| -------------- | ------------ | --------------- |
+| JDB            | ✔️           | ✔️              |
+| SQLite3        | ✔️           | ✔️              |
+| JSOF           | ✔️           | ✖️              |
+| JSON           | ✔️           | ✔️              |
+| YAML           | ✔️           | ✖️              |
+| XML            | ✔️           | ✖️              |
+| CSV            | ✔️           | ✖️              |
+| YAML           | ✔️           | ✖️              |
+| LocalStorage   | ✔️           | ✔️              |
+| SessionStorage | ✔️           | ✔️              |
+| Clipboard      | ✔️           | ✔️              |
+| IndexedDB      | ✔️           | ✔️              |
+| webSQL         | ✔️           | ✔️              |
 
 ### create connection
 
@@ -8,12 +24,12 @@
 import { DashDB, Database, createDatabase } from 'dash-db';
 
 const options = {
-	// one of 'sqlite' | *'jdb' | 'csv' | 'local' | 'session' | ...
-	type: 'jdb',
+    // one of 'sqlite' | *'jdb' | 'csv' | 'local' | 'session' | ...
+    type: 'jdb',
 
-	// if file exist, write/update, else create new
-	// also we can use '::memory::' for store in memory
-	database: './my-database-name.jdb',
+    // if file exist, write/update, else create new
+    // also we can use '::memory::' for store in memory
+    database: './my-database-name.jdb',
 };
 
 // create connection with Database class
@@ -42,15 +58,15 @@ import db from './connection';
 
 // define methods
 let User = db('user').define({
-	id: {
-		type: Types.INTEGER,
-		AUTO_INCREMENT: true,
-		PRIMARY_KEY: true,
-	},
-	username: {
-		type: Types.STRING,
-		length: { max: 255 },
-	},
+    id: {
+        type: Types.INTEGER,
+        AUTO_INCREMENT: true,
+        PRIMARY_KEY: true,
+    },
+    username: {
+        type: Types.STRING,
+        length: { max: 255 },
+    },
 });
 ```
 
@@ -133,13 +149,13 @@ import { refrence } from 'dash-db';
 import Author from './models/author.model.js';
 
 const Book = db('book').define({
-	id: {},
-	author_id: {
-		// 'author' | Author
-		refrence: Author,
-		field: 'id',
-	},
-	publisher_id: refrence('publisher').field('id'),
+    id: {},
+    author_id: {
+        // 'author' | Author
+        refrence: Author,
+        field: 'id',
+    },
+    publisher_id: refrence('publisher').field('id'),
 });
 
 export default Book;
@@ -149,13 +165,13 @@ export default Book;
 
 ```javascript
 const ShopList = {
-	...,
-	shopItems: {
-		refrence: 'shop-items',
-		which: { id: { eq: this.id } },
-		field: 'id',
-	},
-	...,
+    ...,
+    shopItems: {
+        refrence: 'shop-items',
+        which: { id: { eq: this.id } },
+        field: 'id',
+    },
+    ...,
 };
 ```
 
@@ -163,17 +179,17 @@ const ShopList = {
 
 ```javascript
 const Book = db('book').define({
-	...,
-	author_id: {
-		type: Types.ARRAY,
-		length: { max: 2 },
-		schema: {
-			type: Types.REFRENCE
-			from: 'author',
-			field: 'id'
-		}
-	}
-	...,
+    ...,
+    author_id: {
+        type: Types.ARRAY,
+        length: { max: 2 },
+        schema: {
+            type: Types.REFRENCE
+            from: 'author',
+            field: 'id'
+        }
+    }
+    ...,
 });
 ```
 
@@ -181,7 +197,7 @@ const Book = db('book').define({
 
 ```javascript
 Book.insert({
-	// Authors with id 45 and 93
-	author_id: [45, 93],
+    // Authors with id 45 and 93
+    author_id: [45, 93],
 });
 ```
