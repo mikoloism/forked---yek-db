@@ -1,0 +1,76 @@
+{
+	"database": {
+		"type": "DashDB",
+		"databaseName": "dash-db.db.json",
+		"version": "2.0.13"
+	},
+	"tables": {
+		"user": {
+			"comment": "all user (e.g. author, customer, reader, student)"
+		},
+		"rel_user_book": {
+			"comment": ""
+		}
+	},
+	"schema": {
+		"user": {
+			"id": {
+				"dataType": "INTEGER",
+				"default": null,
+				"option": {
+					"comment": "",
+					"PRIMARY_KEY": true,
+					"AUTO_INCREMENT": true
+				}
+			},
+			"username": {
+				"dataType": "TEXT",
+				"default": null,
+				"option": {
+					"comment": "",
+					"PRIMARY_KEY": false,
+					"AUTO_INCREMENT": false
+				}
+			}
+		},
+		"rel_user_book": {
+			"id": {
+				"dataType": "INTEGER",
+				"default": null,
+				"option": {
+					"comment": "",
+					"PRIMARY_KEY": true,
+					"AUTO_INCREMENT": true
+				}
+			},
+			"book": {
+				"dataType": "TEXT",
+				"default": null,
+				"option": {
+					"comment": "",
+					"PRIMARY_KEY": false,
+					"AUTO_INCREMENT": false
+				}
+			},
+			"author_id": {
+				"dataType": "INTEGER",
+				"default": null,
+				"option": {
+					"comment": "",
+					"PRIMARY_KEY": false,
+					"AUTO_INCREMENT": false
+				}
+			}
+		}
+	},
+	"records": {
+		"user": [{ "id": 1, "username": "john" }],
+		"rel_user_book": [
+			{
+				"id": 1,
+				"book": "how?",
+				"author_id": { "refrence": "user", "field": "id" }
+			}
+		]
+	}
+}
