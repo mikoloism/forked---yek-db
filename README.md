@@ -1,40 +1,22 @@
 # 📔 Dash-DB
 
-Local database management system
-- internal ORM/ORD
-- support
-  - *JDB (stand: javascript database)
-    - browser
-    - node
-  - SQLite3
-    - browser
-    - node
-  - Javascript Object File
-    - node
-  - JSON
-    - browser
-    - node
-  - YAML
-    - node
-  - XML
-    - node
-  - CSV
-    - node
-  - LocalStorage
-    - browser
-    - node
-  - SessionStorage
-    - browser
-    - node
-  - Clipboard
-    - browser
-    - node
-  - IndexedDB
-    - browser
-    - node
-  - webSQL
-    - browser
-    - node
+[local|flat-file|single-file] database management system
+
+| database-type  | support-node | support-browser |
+| -------------- | ------------ | --------------- |
+| JDB            | ✅           | ✅              |
+| SQLite3        | ✅           | ✅              |
+| JSOF           | ✅           | ❎              |
+| JSON           | ✅           | ✅              |
+| YAML           | ✅           | ❎              |
+| XML            | ✅           | ❎              |
+| CSV            | ✅           | ❎              |
+| YAML           | ✅           | ❎              |
+| LocalStorage   | ✅           | ✅              |
+| SessionStorage | ✅           | ✅              |
+| Clipboard      | ✅           | ✅              |
+| IndexedDB      | ✅           | ✅              |
+| webSQL         | ✅           | ✅              |
 
 ### create connection
 
