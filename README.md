@@ -33,10 +33,10 @@ const options = {
 };
 
 // create connection with Database class
-const db = new Database(options);
+const db = new Database(options).db;
 
 // create connection with DashDB class
-const db = new DashDB(options);
+const db = new DashDB(options).db;
 
 // create connection with createDatabase function
 const db = createDatabase(options);
@@ -52,19 +52,29 @@ db('table-name');
 
 -   define method
 
+> NOTE : each table should have the uniquie field(e.g. `id` or `_id`)
+> NOTE : uniquie field define with `PRIMARY_KEY` attribute
+> TIPS : can default `id` attributes with `DataType.ID`
+
 ```javascript
-import { Types } from 'dash-db';
+import { DataType } from 'dash-db';
 import db from './connection';
+
+// TIPS: import schemaMeta then use without any boolean value
+//  let { AUTO_INCREMENT } = schemaMeta;
+//  that, automaticly, save schema alike `AUTO_INCREMENT: AUTO_INCREMENT`
+//  what is `AUTO_INCREMENT` value? `true`
+//  actually is, `AUTO_INCREMENT: true`
 
 // define methods
 let User = db('user').define({
     id: {
-        type: Types.INTEGER,
-        AUTO_INCREMENT: true,
+        type: DataType.INTEGER,
+        AUTO_INCREMENT: true, // * READ ABOVE TIPS
         PRIMARY_KEY: true,
     },
     username: {
-        type: Types.STRING,
+        type: DataType.STRING,
         length: { max: 255 },
     },
 });
