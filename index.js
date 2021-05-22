@@ -4,5 +4,5 @@ const {
 	createDatabase,
 	DataType,
 	refrence,
-} = require('./src');
+} = require('./dist');
 module.exports = { DashDB, Database, createDatabase, DataType, refrence };
