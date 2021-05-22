@@ -1,5 +1,6 @@
 # 📔 Dash-DB
 
+[![build](https://github.com/dash-js/dash-db/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/dash-js/dash-db/actions/workflows/npm-publish.yml)
 [![npm version](https://badge.fury.io/js/%40dash-js%2Fdash-db.svg)](https://badge.fury.io/js/%40dash-js%2Fdash-db)
 ![package version](https://img.shields.io/github/package-json/v/dash-js/dash-db)
 ![mit license](https://img.shields.io/github/license/dash-js/dash-db)
