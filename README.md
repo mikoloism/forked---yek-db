@@ -1,4 +1,4 @@
-# 📔 Dash-DB
+# 📔 dash-database
 
 [![build](https://github.com/dash-js/dash-db/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/dash-js/dash-db/actions/workflows/npm-publish.yml)
 [![npm version](https://badge.fury.io/js/%40dash-js%2Fdash-db.svg)](https://badge.fury.io/js/%40dash-js%2Fdash-db)

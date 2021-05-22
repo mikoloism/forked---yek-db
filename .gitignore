@@ -3,3 +3,6 @@ node_modules/
 .prettierignore
 dist/
 build/
+src/utils/db-file.js
+src/utils/db-type.js
+blog.jdb
