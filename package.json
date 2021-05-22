@@ -1,6 +1,6 @@
 {
 	"name": "@dash/db",
-	"version": "0.0.1-beta",
+	"version": "0.0.5-beta",
 	"description": "Utils for using local storage/db (e.g. sqlite, csv, json-file, js-object-file, yaml-file, etc.)",
 	"main": "build/index.js",
 	"scripts": {
