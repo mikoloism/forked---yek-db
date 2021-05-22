@@ -1,15 +1,15 @@
 import { encrypt, decrypt } from './cryptor';
 
-const bEncode = function ByterEncoder(data) {
-	let encrypted = JSON.stringify(encrypt(JSON.stringify(data)));
+const bEncode = function ByterEncoder(json) {
+	let encrypted = JSON.stringify(encrypt(JSON.stringify(json)));
 	let buff = Buffer.from(encrypted);
 	let uint = Uint8Array.from(buff).toString();
 	let encoded = JSON.stringify(encrypt(uint));
 	let value = Buffer.from(encoded, 'binary').toString('base64');
 	return value;
 };
-const bDecode = function ByterDecoder(data) {
-	let binary = Buffer.from(data, 'base64').toString('binary');
+const bDecode = function ByterDecoder(encoded) {
+	let binary = Buffer.from(encoded, 'base64').toString('binary');
 	let decoded = JSON.parse(binary);
 	let decrypted = decrypt(decoded);
 	let array = decrypted.split(',').map((item) => parseInt(item));
