@@ -1,4 +1,4 @@
-name: publish npm
+name: build
 on: workflow_dispatch
 jobs:
     build:
@@ -12,9 +12,10 @@ jobs:
               with:
                   node-version: '14'
                   registry-url: 'https://registry.npmjs.org'
-            - run: npm install && npm build
+            - name: installing
+              run: npm install && npm build
             # Publish to npm
-            - working-directory: ./react-trux
-              run: npm install && npm build && npm publish --access public
+            - name: publishing
+              run: npm publish --access public
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
