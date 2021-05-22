@@ -1,12 +1,13 @@
 {
 	"name": "@dash-js/dash-db",
-	"version": "0.0.4",
+	"version": "0.0.1-beta",
 	"description": "Utils for using local storage/db (e.g. sqlite, csv, json-file, js-object-file, yaml-file, etc.)",
-	"main": "index.js",
+	"main": "dist/index.js",
 	"scripts": {
 		"start:watch": "nodemon --exec babel-node index.js",
 		"build:watch": "babel --watch src/index.js --out-dir dist",
 		"start": "node dist/index.js",
+		"start:example": "nodemon --exec babel-node example/index.js",
 		"build": "babel src --out-dir dist",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
