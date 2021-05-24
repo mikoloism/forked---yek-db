@@ -1,4 +1,4 @@
-# 📔 dash-database
+# 📔 dash-database (move to [@yek/db](https://github.com/yek-org/db))
 
 [![build](https://github.com/dash-js/dash-db/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/dash-js/dash-db/actions/workflows/npm-publish.yml)
 [![npm version](https://badge.fury.io/js/%40dash-js%2Fdash-db.svg)](https://badge.fury.io/js/%40dash-js%2Fdash-db)
@@ -10,23 +10,14 @@
 | database-type  | support-node | support-browser |
 | -------------- | ------------ | --------------- |
 | JDB            | ✔️           | ✔️              |
-| SQLite3        | ✔️           | ✔️              |
-| JSOF           | ✔️           | ✖️              |
-| JSON           | ✔️           | ✔️              |
-| YAML           | ✔️           | ✖️              |
-| XML            | ✔️           | ✖️              |
-| CSV            | ✔️           | ✖️              |
-| YAML           | ✔️           | ✖️              |
-| LocalStorage   | ✔️           | ✔️              |
-| SessionStorage | ✔️           | ✔️              |
-| Clipboard      | ✔️           | ✔️              |
-| IndexedDB      | ✔️           | ✔️              |
-| webSQL         | ✔️           | ✔️              |
+
+## What is JDB
+Javascript Database
 
 ### create connection
 
 ```javascript
-import { DashDB, Database, createDatabase } from 'dash-db';
+import { Database, createDatabase } from 'dash-db';
 
 const options = {
     // one of 'sqlite' | *'jdb' | 'csv' | 'local' | 'session' | ...
