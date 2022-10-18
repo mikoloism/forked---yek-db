@@ -1,4 +1,5 @@
 **DEPRECATED on `Oct 18 2022`**
+
 hint : re-branded to `yek/db`
 
 <!--
