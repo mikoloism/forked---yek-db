@@ -1,3 +1,10 @@
+**DEPRECATED on `Oct 18 2022`**
+hint : re-branded to `yek/db`
+
+<!--
+
+manage (local database, flat-file, single-file), support (JDB, SQLite3, JSOF, JSON, YAML, XML, CSV, localStorage API, sessionStorage API, cilpboard API, IndexedDB, WebSQL, etc.
+
 # 📔 dash-database (move to [@yek/db](https://github.com/yek-org/yek-db))
 
 [![build](https://github.com/dash-js/dash-db/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/dash-js/dash-db/actions/workflows/npm-publish.yml)
@@ -207,3 +214,5 @@ Book.insert({
     author_id: [45, 93],
 });
 ```
+
+-->
